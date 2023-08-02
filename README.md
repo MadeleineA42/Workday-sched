@@ -99,4 +99,4 @@ You are required to submit the following for review:
 - - -
 © 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
 
-<img src="assets/images/Screenshot 2023-08-02 at 4.32.09 PM.png" alt="screenshot of mockup of assignment">
+<img src="/assets/images/Screenshot 2023-08-02 at 4.32.09 PM.png" alt="screenshot of mockup of assignment">
