@@ -6,7 +6,7 @@ $(document).ready(function () {
   // this is a function to display the current date
 function displayCurrentDateAndTime() {
   const currentDate = day.js().format("dddd, MMMM D, YYYY");
-  const currentTime = day.js().formate("h:mm A");
+  const currentTime = day.js().format("h:mm A");
   $("#date").text(currentDate);
   $("#time").text(currentTime);
 
