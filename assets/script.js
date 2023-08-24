@@ -17,13 +17,9 @@ function displayCurrentDateAndTime() {
   
   $('.time-block').each(function()  {
     const blockHour = parseInt(this.id);
-    if (blockHour < currentHour) {
-      $(this).removeClass("present future").addClass("past");
-    } else if (blockHour === currentHour) {
-      $(this).removeClass("past future").addClass("present");
-    } else {
-      $(this).removeClass("past present").addClass("future");
-    }
+    $(this).toggleClass("present", blockHour === currentHour);
+    $(this).toggleClass("past", blockHour < currentHour);
+    $(this).toggleClass("future", blockHour > currentHour)
   });
  }
 
