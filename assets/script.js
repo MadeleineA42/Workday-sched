@@ -2,16 +2,19 @@
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 
-$(document).ready(function() {
+$(document).ready(function () {
   // this is a function to display the current date
 function displayCurrentDateAndTime() {
-  const currentDateTime = day.js().format("dddd, MMMM D, YYYY -h:mm A");
-  $("#currentDay").text(currentDateTime);
+  const currentDate = day.js().format("dddd, MMMM D, YYYY");
+  const currentTime = day.js().formate("h:mm A");
+  $("#date").text(currentDate);
+  $("#time").text(currentTime);
+
 }
  
 // this function allows the hour blocks to change color based on the current hour 
  function hourBlockColor()  {
-  const currentHour = day.js().hour('h');
+  
   $('.time-block').each(function()  {
     const blockHour = parseInt(this.id);
     if (blockHour < currentHour) {
@@ -47,4 +50,6 @@ function displayCurrentDateAndTime() {
   //
   displayCurrentDateAndTime();
   hourBlockColor();
+
+  setInterval(displayCurrentDateAndTime, 1000)
 });
