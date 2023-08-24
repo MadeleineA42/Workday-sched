@@ -46,4 +46,6 @@ function displayCurrentDate() {
   // time-block containing the button that was clicked? How might the id be
   // useful when saving the description in local storage?
   //
+  displayCurrentDate();
+  hourBlockColor();
 });
