@@ -3,14 +3,11 @@
 // in the html.
 
 $(document).ready(function () {
-  // this is a function to display the current date
-function displayCurrentDateAndTime() {
-  const currentDate = day.js().format("dddd, MMMM D, YYYY");
-  const currentTime = day.js().format("h:mm A");
-  $("#date").text(currentDate);
-  $("#time").text(currentTime);
+  // this is a variable to display the current date
+  let currentTime = moment().format('H');
+  let currentDateAndTime = moment().format('ddd' + ' ' + 'MMM' + ' ' + 'Do' + ',' + 'YYYY');
+  $("#currentDay").text(currentDateAndTime);
 
-}
  
 // this function allows the hour blocks to change color based on the current hour 
  function hourBlockColor()  {
@@ -44,7 +41,7 @@ function displayCurrentDateAndTime() {
   // time-block containing the button that was clicked? How might the id be
   // useful when saving the description in local storage?
   //
-  displayCurrentDateAndTime();
+ 
   hourBlockColor();
 
   setInterval(displayCurrentDateAndTime, 1000)
