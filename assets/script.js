@@ -1,13 +1,12 @@
-````// Wrap all code that interacts with the DOM in a call to jQuery to ensure that
+// Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 
 $(document).ready(function() {
   // this is a function to display the current date
-const displayCurrentTime = day.js().format('h');
-function displayCurrentDate() {
-  const currentDate = day.js().format('MM,DD,YYY');
-  $("currentDay").text(currentDate);
+function displayCurrentDateAndTime() {
+  const currentDateTime = day.js().format("dddd, MMMM D, YYYY -h:mm A");
+  $("#currentDay").text(currentDateTime);
 }
  
 // this function allows the hour blocks to change color based on the current hour 
@@ -46,6 +45,6 @@ function displayCurrentDate() {
   // time-block containing the button that was clicked? How might the id be
   // useful when saving the description in local storage?
   //
-  displayCurrentDate();
+  displayCurrentDateAndTime();
   hourBlockColor();
 });
