@@ -4,10 +4,11 @@
 
 $(document).ready(function() {
   // this is a function to display the current date
- function displayCurrentDate()  {
-  const currentDate = day.js().format("MM,DD,YYYY");
-  $("#currentDay").text(currentDate);
- }
+const displayCurrentTime = day.js().format('h');
+function displayCurrentDate() {
+  const currentDate = day.js().format('MM,DD,YYY');
+  $("currentDay").text(currentDate);
+}
  
 // this function allows the hour blocks to change color based on the current hour 
  function hourBlockColor()  {
