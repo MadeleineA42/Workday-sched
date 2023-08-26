@@ -7,29 +7,16 @@ Create a simple calendar application that allows a user to save events for each 
 
 You'll need to use the [Day.js](https://day.js.org/en/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Day.js in the browser.
 
-## User Story
+## Workday Scheduler
+
+When the user visits this page, they are presented with hourly time blocks that corrospond with the average work day. The current date is displayed in the header on the page.
+The colors of the time blocks update in real time, using a simple color key or grey for past, red for present and green for future time blocks.
+When the user wants to add an event or meeting, they simply type it in the time block and click the save button. 
+This app used jquery to ensure the js isn't executed until the entirety of the html is loaded and with the addition of local storage the events will remain despite the page being reloaded!
 
 
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
+# Deployed Site
+https://madeleinea42.github.io/Workday-sched/
 
-
-## Acceptance Criteria
-
-
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with timeblocks for standard business hours of 9am&ndash;5pm
-WHEN I view the timeblocks for that day
-THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-WHEN I click into a timeblock
-THEN I can enter an event
-WHEN I click the save button for that timeblock
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
-
+# Screenshot of the mockup
 <img src="/assets/images/Screenshot 2023-08-02 at 4.32.09 PM.png" alt="screenshot of mockup of assignment">
